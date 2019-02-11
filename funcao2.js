@@ -19,3 +19,6 @@ console.log(somaa(5, 6));//o que esta sendo chamado é o nome da variavel que ar
 const subt = (a , b) => a - b; // Se não existir chaves, significa que a função possui uma única linha ou sentença de código.
 
 console.log(subt(5 , 5));
+
+const imprimir2 = palavra => console.log(palavra);
+imprimir2('Olá mundo');
