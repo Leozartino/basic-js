@@ -14,7 +14,7 @@ const somaa = (a , b) => { //função sem nome ou anônima
 
 console.log(somaa(5, 6));//o que esta sendo chamado é o nome da variavel que armazena uma função
 
-//Retorno implícito
+//Retorno implícito:
 
 const subt = (a , b) => a - b; // Se não existir chaves, significa que a função possui uma única linha ou sentença de código.
 

@@ -5,6 +5,6 @@ for (let i = 0; i < 10; i++){
         console.log(i);
     });
 };
-//diferente do var, com o let é respeitado o valor de i a cada iteração, pois possui o conceito de escopo
+//diferente do var, com o let é respeita o valor de i a cada iteração, pois possui o conceito de escopo
 funcs [2] ();
 funcs [8] ();

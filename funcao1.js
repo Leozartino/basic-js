@@ -4,7 +4,7 @@ function imSoma (a, b){
     console.log(a + b);
 
 };
-imSoma(2,3);
+imSoma(2,3); //chamada da função
 
 //Função com retorno
 

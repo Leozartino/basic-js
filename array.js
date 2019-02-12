@@ -1,7 +1,7 @@
 /*
     Em JavaScript o array é heterogêno, até porque a linguagem é fracamente tipada.
     Array flexível (JS).
-    Para acessar um elemento do array, deve-se passado o índice correspondente do elemento 
+    Para acessar um elemento do array, deve ser passado o índice correspondente do elemento 
     no array.
 */
 
