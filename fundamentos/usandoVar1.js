@@ -27,6 +27,6 @@ function teste(){
 teste();
 
 //Quando se define um variavel fora de uma função, ela é global.
-//Estara definida dentro do objeto window (se for em uma página-forn tend)
+//Estara definida dentro do objeto window (se for em uma página-forn end)
 //Apesar da "vantagem" de declarar uma variavel global que pode ser acessada de qualquer lugar
 //também pode ser problemático, caso uma operação sobrescreva o valor da mesma.

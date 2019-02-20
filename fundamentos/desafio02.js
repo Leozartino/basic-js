@@ -1,5 +1,7 @@
 function exibirPares (n1, n2) {
-
+    if (n1 > n2){
+        [n1,n2] = [n2,n1];
+    }
     for (var i = n1; i <= n2; i++){
         if ( i !== 0 && i % 2 === 0 ){
             console.log(i);
@@ -11,4 +13,4 @@ function exibirPares (n1, n2) {
    
 };
 
-exibirPares(32, 121);
+exibirPares(36, 6);

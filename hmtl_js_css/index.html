@@ -1,25 +1,38 @@
 <html>
     <head>
-        <meta charset="UTF-8"> 
         <title>Curso de JS</title>
     </head>
     <body>
-        <div id="app">
-            <input type="Teste" name = "Nome"/>
-            <button class="botao"> Adcionar </button>
-        </div>
-
 
         <script>
-         //criação da variavel btn, manipulando a DOM  
-         var btn = document.querySelector('button.botao');
-         var inputElem = document.querySelector('input[name=Nome]');
+        /*
+        É interessante por a tag scrip ao final de body e antes de fecha-la, pois o carregamento
+        ou a renderização de uma página web se da de forma vertical. o melhor lugar é AQUI xD
+        */
+        function retornaSexo(sexo){
+            //Uma opção inteligente para trabalhar em um cenário que exista muitas validações usando a mesma variavel
+            //é usar o switch case.
 
-         btn.onclick  = function() {
-             
-            //var text = inputElem.value 
-            alert(inputElem.value); //recuperando o texto através do value.
-         }
+            if (sexo === 'M'){ 
+                var resultado = 'Masculino';
+                return resultado;
+            }
+
+            else if(sexo === 'F'){
+                var resultado = 'Feminino';
+                return resultado;
+            }
+
+            else {
+                var resultado = 'Indefinido';
+                return resultado;
+
+            };
+          
+
+        };
+        
+        console.log(retornaSexo('Não binário'));
         </script>
         
     </body>
