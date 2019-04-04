@@ -1,0 +1,64 @@
+//A DOM é a arvore de elementos do HTML
+//Armazenando a referência do elemento input e btn, pegando a sua classe e nome.
+
+    var btnElement = document.querySelector('button[class = botao] ');
+    var inputElement = document.querySelector('input[name = nome]')
+
+    //CRIANDO uma função e dispara-la quando o botão for clicado.
+    btnElement.onclick = function mostrarAlerta(){
+      var text = inputElement.value; //Recuperando o texto do input e armazenando na var text
+      alert(text);
+    };
+
+
+Além de poder referenciar os elementos da DOM no script (JS), também é possivel 
+criar elementos e remover elementos da DOM no JS :)
+
+ var linkElement = document.createElement('a'); //tag 'a' cria link?
+    //Setando os atributos da tag
+    linkElement.setAttribute('href', 'https://www.udemy.com/');
+    linkElement.setAttribute('title', 'Site da Udemy');
+
+    //Criando um texto, posteriormente será alinhado a tag link
+    var textElement = document.createTextNode('Acessar o site da Udemy');
+    //associando o texto criado à tag link
+    linkElement.appendChild(textElement);
+    //Armazenando a referência da div = "app", que posteriormente será usada para ser 'casa' da nossa tag link criada recentemente.
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);//Jogando o link no corpo
+    
+    var inputElement = document.querySelector('#teste');
+    //Removendo o input contido na div = "app"
+    containerElement.removeChild(inputElement);
+    
+//Referenciado os elementos da DOM e armazenando nas variaveis correspondentes
+      var btnElement = document.querySelector('#boto');
+      var divQ = document.querySelector('#app');
+      //FUnção que gera cores aleatorias
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+      //Evento acionado quando é clicado no botão
+      btnElement.onclick = function (){
+        var quad = document.createElement('div');
+
+        quad.style.width = '100px';
+        quad.style.height = '100px';
+        quad.style.backgroundColor = '#F00';
+
+        //Passando o mouse por cima do quadrado aciona outro evento, no caso a chmada da função que retorna uma cor.
+        quad.onmouseover = function (){
+          quad.style.backgroundColor =  getRandomColor();
+        };
+
+        //Passando tudo o que foi gerado de quad para a divQ (pondo dentro)
+        divQ.appendChild(quad);   
+
+      };
+
+  
