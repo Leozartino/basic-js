@@ -1,4 +1,4 @@
-//coleao dinâmica de pares chave/valor
+//colecao dinâmica de pares chave/valor
 const produto = new Object;
 
 produto.nome = 'Cadeira';

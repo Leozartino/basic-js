@@ -32,4 +32,4 @@ console.log(filha);
 
 //Função famosa que retorna um objeto...
 const fromJson = JSON.parse('{"info":"Sou um estudante"}');  //JSON é um formato textual, string
-console.log(fromJson.info);
+console.log(typeof fromJson.info);

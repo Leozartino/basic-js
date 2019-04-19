@@ -3,7 +3,7 @@ const inputReference = document.querySelector('input');
 const ulReference = document.querySelector('#app ul');
 
 
-const listaDeTodos = JSON.parse(localStorage.getItem('lista_todos')) || [];
+let listaDeTodos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 const renderTodos = () => {
   ulReference.innerHTML = '';
@@ -24,7 +24,7 @@ const renderTodos = () => {
 
     ulReference.appendChild(todoELement);
 
-  
+
   };
 }; renderTodos();
 
@@ -34,6 +34,7 @@ bottonReference.onclick = function addTodos(){
   inputReference.value = '';
   renderTodos();
   local();
+
 };
 
 const deleteTodo = (pos) => {
@@ -41,5 +42,5 @@ const deleteTodo = (pos) => {
   renderTodos();
   local();
 };
-
-const local =  () => localStorage.setItem('lista_todos', JSON.stringify(listaDeTodos));
+//O local storage permite salver somente par: chave - valor no formato string. Ou seja, informações não relacionais.
+const local =  () => localStorage.setItem('list_todos', JSON.stringify(listaDeTodos));

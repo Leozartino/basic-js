@@ -13,3 +13,12 @@ const sequencia = {
   _valor: 0, //o underline indica que o atributo é desejavel ser privado
 
 }
+
+class Pessoa{
+  constructor(nome, idade){
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+
+}
