@@ -1,0 +1,11 @@
+A descrição --save-dev informa ao gerenciador para instalar a lib, dependencia
+somente para ser usado no ambiente de desenvolvimento e não de produção.
+
+O arquivo o package-lock.json descreve de uma forma mais precisa a versão de uma
+dependencia que foi baixada.
+
+Isso pode ser útil quando se tem muitos desenvolvedores envolvidos em um projeto
+e de alguma forma eles possam baixar uma versão diferente da que foi testada
+por outro desenvolvedor, dando conflitos e bugs. O package-lock.json garante que
+quando o gerenciador for rodado ele ira pegar a versão presente descrita no arquivo
+mencionado -lock.json mesmo que tenha mudado ou feito um comando diferente.
