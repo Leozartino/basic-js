@@ -1,0 +1,10 @@
+Scripts => podem ser criados dentro do package.json, para serem executados pelo dev 
+com alguma finalidade especifica
+
+Scripts são muito úteis na produtividade do desenvolvedor, são bastante versateis também
+executar tarefas automatizadas, repetitivas e de ocorrência notavel 
+
+
+Ao criar scripts, é possivel chamar com o yarn: yarn nome_script
+ou no npm, porém os definidos pelo desenvolvedor devem vir escrito com run antes do nome_script propriamente dito:
+npm run nome_script

@@ -1,5 +1,5 @@
 //Cuidado com o objeto global
-//Coisas que estçao no objeto global podem ser modificadas por qualquer módulo de um mesmo diretório.
+//Coisas que estão no objeto global podem ser modificadas por qualquer módulo de um mesmo diretório.
 //É uma especie de objeto compartilhado global
 global.util = {
   soma(a, b) {

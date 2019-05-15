@@ -6,7 +6,7 @@ console.log(this === exports); //SIM, mesma referência (no ambito mais global d
 
 //Em uma função, o this aponta também pra module.exports e exports??
 function testandoThis(par) {
-  console.log("O par passando this externo:");
+  console.log("O par passando o this externo:");
   console.log(par === exports); //como o parametro passado é o this que veio do escopo maior, é true
   console.log(par === module.exports); //como o parametro passado é o this que veio do escopo maior, é true tmb
 
@@ -14,16 +14,16 @@ function testandoThis(par) {
   console.log(
     //Aponta para o "objeto global interno", por assim dizer!
     self === exports
-      ? `É ${self} igual ao module.exports`
+      ? `O ${self} é igual ao module.exports`
       : `O ${self} interno é diferente do module.exports`
   );
   console.log(
     self === module.exports
-      ? `É ${self} igual ao exports`
+      ? `O ${self} é igual ao exports`
       : `O ${self} interno é diferente do exports`
   );
   console.log("O this dentro uma função aponta para global?");
-  console.log(self === global);
+  console.log(self === global); //SIM xD
 }
 
 testandoThis(this);
