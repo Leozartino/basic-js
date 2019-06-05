@@ -14,3 +14,11 @@ fs.readFile(caminho, "utf-8", (err, cont) => {
 
   console.log(`${config.db.host}:${config.db.port}`);
 });
+
+const config = require("./arquivo.json");
+console.log(config.db);
+
+fs.readdir(__dirname, (err, arquivos) => {
+  console.log("Lendo contéudo das pastas...");
+  console.log(arquivos);
+});
