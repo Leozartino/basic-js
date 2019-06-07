@@ -14,13 +14,13 @@ function testandoThis(par) {
   console.log(
     //Aponta para o "objeto global interno", por assim dizer!
     self === exports
-      ? `O ${self} é igual ao module.exports`
-      : `O ${self} interno é diferente do module.exports`
+      ? `O ${self} é igual ao exports`
+      : `O ${self} interno é diferente do exports`
   );
   console.log(
     self === module.exports
-      ? `O ${self} é igual ao exports`
-      : `O ${self} interno é diferente do exports`
+      ? `O ${self} é igual ao module.exports`
+      : `O ${self} interno é diferente do module.exports`
   );
   console.log("O this dentro uma função aponta para global?");
   console.log(self === global); //SIM xD

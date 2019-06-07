@@ -7,8 +7,8 @@ const objetoProduto = {
 };
 
 //Nosso objetivo aqui é persistir esse objeto no disco, salvar ele
-//COmo ele é um objeto precisamos converter esse objeto em um formato válido
-//Pensou em algo? Isso JSON, já que ele é uma especie de string
+//Como ele é um objeto precisamos converter esse objeto em um formato válido
+//Pensou em algo? Isso mesmo: JSON, já que ele é uma especie de string
 
 fs.writeFile(
   __dirname + "/arquivoGeradoObjeto.json",
