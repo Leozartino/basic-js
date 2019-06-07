@@ -7,7 +7,7 @@ const heapSort = hP.heapSort; //chamo isso de gambiarra, atribuindo a fun de ord
 //de um servidor, de algo que esta remoto.
 //ele envia uma requisição para um servidor
 
-//1 - Nosso objetivo é obter um arquivo JSON que se encontra na ulr descrita acima
+//1 - Nosso objetivo é obter um arquivo JSON que se encontra na url descrita acima
 //utilizando o axios para enviar a request e obter uma response
 //get envia a request, quando a requisição retornar é chamado o .then
 
@@ -19,16 +19,15 @@ axios.get(url).then(response => {
   let pessoaMenor = null;
 
   //obtendo somente as pessoas da china e mulheres, além de pegar só o salario
-  const chinesaSalario = infoFuncionarios
+  const mulheresChinesas = infoFuncionarios
     .filter(pessoa => pessoa.pais === "China")
     .filter(pessoa => pessoa.genero === "F");
-  const chSalario = chinesaSalario.map(fun => fun.salario);
+  const chSalarios = mulheresChinesas.map(fun => fun.salario);
   //chamando o heapSort para ordenar, isso permite que eu retorne o menor valor
   //pois como é ordenado em ordem crescente, o menor sempre estará na pos de  i = 0;
-  heapSort(chSalario);
-  chinesaMenorSalario = chSalario[0];
-  pessoaMenor = chinesaSalario.filter(
-    funcionario => funcionario.salario === chinesaMenorSalario
+  heapSort(chSalarios);
+  chinesaMenorSalario = mulheresChinesas.filter(
+    funcionaria => funcionaria.salario === chSalarios[0]
   );
-  return console.log(pessoaMenor);
+  return console.log(chinesaMenorSalario);
 });

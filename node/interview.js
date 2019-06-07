@@ -70,6 +70,7 @@ function inverteLista(lista) {
 let listaA = [5, 2, 4, 6, 7, 8, 10];
 console.log(inverteLista(listaA));
 
+//Função de inverter lista
 function inverteLista2(lista) {
   let novaLista = [];
   let tamanhoLista = lista.length - 1;
@@ -78,4 +79,5 @@ function inverteLista2(lista) {
   }
   return novaLista;
 }
+console.log(listaA);
 console.log(inverteLista2(listaA));
