@@ -1,0 +1,20 @@
+Deve ser usado a melhor forma de requisição dentro de uma aplicação REST.
+Por exemplo: 
+  ->Se quisermos listar alguma entidade ou informação, então usaremos o verbo GET para 
+    obter os dados requisitados.
+  ->Se quisermos cadastrar/criar algo, usaremos o verbo POST para isso.
+  ->Se quisermos alterar parcialmente, usaremos o PATCH.
+  ->Se quisermos alterar completamente, usaremos o PUT.
+  ->Se quisermos deletar/excluir, usaremos o DELETE.
+
+Códigos HTTP:
+  200: deseja-se listar algo e recebemos a ação. (GET)
+  201: quando criamos alguma coisa ou editamos (POST, PUT, PATCH).
+  204: esperamos nenhum conteúdo (DELETE).
+
+  404: procura-se algo em especifico e não é achado( utilizando o GET). 
+
+API's REST devem ser o mais simples possível.
+  Quando usamos o REST nós estamos fazendo operações básicas (CRUD).
+  
+Consultar códigos de STATUS HTTP.
