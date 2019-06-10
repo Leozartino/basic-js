@@ -1,16 +1,15 @@
 {
-  "name": "main",
+  "name": "funcionarios",
   "version": "1.0.0",
-  "description": "Teste_axios_e_algo",
-  "main": "funcionarios.js",
+  "main": "funcionarios_reduce.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "dev": "nodemon"
+    "start": "nodemon"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
   "devDependencies": {
-    "axios": "0.18.0"
+    "nodemon": "^1.19.1"
   }
 }
