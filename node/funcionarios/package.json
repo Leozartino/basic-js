@@ -1,16 +1,9 @@
 {
-  "name": "main",
+  "name": "funcionarios",
   "version": "1.0.0",
-  "description": "Teste_axios_e_algo",
-  "main": "funcionarios.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "dev": "nodemon"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "axios": "0.18.0"
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0"
   }
 }

@@ -25,8 +25,9 @@ function outer() {
 outer(); // 3
 
 //What is the output?
-
-console.log(typeof typeof 5); //string
+let ac = typeof 5;
+ac = typeof ac;
+console.log(ac); //string
 
 //What is the output?
 
