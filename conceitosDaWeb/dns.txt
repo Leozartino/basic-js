@@ -1,0 +1,21 @@
+Servidor DNS => traduzir os nomes de domínio em endereço IP.
+
+www.google.com => 24.154.36.80
+
+O DNS funciona sobre o protocolo UDP na porta 53.
+
+Funcionamento básico do DNS:
+  1. Usuário informa o domínio, endereço no browser
+  2. Computador envia uma consulta DNS para o servidor local
+  3. O servidor responde com o endreço IP
+  4. Computador acessa o servidor a partir do IP obtido
+
+Busca recursiva
+Busca iterativa
+
+DNS Records
+  A - IPV4
+  AAAA - IPV6
+  MX - Servidor de Email
+  NS - Servidor DNDS
+  CNAME - Canonical Name

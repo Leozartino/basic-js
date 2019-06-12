@@ -1,0 +1,22 @@
+Servidor web => host para tratar requisições para páginas web
+
+Apache => abre uma thread por requisições.
+
+Node => única thread para trabalhando e recebendo as requisições chamado de
+event loop e ele despacha para um pull de thread.
+  Se a demanda for maior o pull vai aumentando
+  Se a demanda for menor o pull vai diminuindo
+
+
+Quando o browser faz uma requisição por meio do protocolo http, utilizando a url
+é feito primeiro uma consulta no servidor DNS, que irá "traduzir" o que foi digitado
+no endereco para o endereco real da pagina, aplicação a qual esta localizado, ou seja,
+o seu endereco ip.
+
+Demora algumas horas para o seu DNS atualizado no mundo inteiro, pois ele precisa
+ser replicado para todos os DNS do mundo ^^
+
+Virtual Hoisting => dentro de um mesmo servidor web, vários sites sendo atendidos.
+
+Dentro de um servidor web é comum ter os arquivos de pastas estáticos, imagnes, css
+e js.

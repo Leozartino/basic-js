@@ -1,0 +1,33 @@
+Um conteúdo é estático quando o servidor lê um arquivo armazenado (no disco), gravados
+e simplemeste renderiza a página a partir da leitura desses arquivos.
+
+O servidor renderiza a página a partir da leitura de arquivos armazenados.
+
+O conteúdo dinâmico é gerado a partir de um código, como por exemplo incluir na 
+página a hora atual, informações incluidas no banco de dados baseados no filtro
+que o usuário fez.
+
+Web server =>
+
+estático:
+  -images
+  -css
+  -js
+  -index.html
+  -about.html
+
+dinâmico: um código gera um conteúdo personalizado a partir de parametros e entradas.
+  /clientes
+  /produtos/top
+  /usuario/12
+
+** Do ponto de vista client-side, quando fazemos com que o javascript crie ou modifique
+elementos do HTML a partir de clicks, entradas ou qualquer outro evento estamos fazendo
+isso de forma dinâmica, do lado do cliente já que o conteúdo ainda não existe até
+ser feita uma ação ou atender a algum requisito especifíco. 
+
+Nesse mesmo contexto, mas do ponto de vista do server-side o primeiro conteúdo gerado
+é obtido de maneira estática, pois o servidor ira ler os arquivos, a pagina HTML
+e retornar ao usuário, mas como os conteúdos da paginas (elemtnos da DOM) são gerados
+no lado client, o servidor não tem papel nessas interações diretamente. 
+**

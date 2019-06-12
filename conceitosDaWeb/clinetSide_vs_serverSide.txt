@@ -1,0 +1,6 @@
+
+
+
+Aplicação Server Side => toda a lógica da aplicação é processada do lado do servidor
+Aplicação Client Side => aplicação rica, vários comportamentos dentro dessa aplicação e
+o acesso do servidor normalmente é para obter dados.

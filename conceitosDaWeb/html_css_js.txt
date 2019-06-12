@@ -1,0 +1,7 @@
+HTML => linguagem de MARCAÇÃO, para estruturar o documento da página web. Parte
+estrutural da página. Por exemplo: título, menu, subtítulos, listas e etc.
+
+CSS => define estilos da estruturação da página, o desing da aplicação (pagina web).
+
+JS  => linguagem de programação, utilizada para dinamizar a aplicação web. Comportamento
+dinâmico, menu dropdown, clicanco um botão aparece algo e blabla relacionado.

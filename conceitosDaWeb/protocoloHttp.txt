@@ -1,0 +1,48 @@
+Protocolo de transferência de hypertexto => incialmente implementação para textos linkados
+
+Documentos escritos em HTML, com textos linkados de uma página para outra, como
+também estabelencendo links dentro de uma pagina, acessando sessões, imagens e etc.
+
+Ele é um protocolo que atua na camada de aplicação e é um protocolo stateless.
+  Stateless nesse contexto, significa que através desse protocolo não é possivel
+  "guardar" informações de uma requisição do acesso a um servidor, 
+  como uma visita a uma página, por exemplo.
+
+  Não existe o estado da conversação, não se sabe se está fazendo a primeira requisição
+  ou a centéssima requisição. 
+ 
+  Toda conexão é como se fosse a primeira.
+
+  É um protocolo cliente-servidor => req e resposta.
+  A resposta pode ser um texto, um html, um vídeo e etc.
+  Um cliente envia uma requisição através de uma url e essa requisição é 
+  atendida no servidor.
+  Opera no TCP/IP. que retorna conteúdos que forma página web (HTML, CSS, JS ..)
+
+  o HTTP tem vários métodos:
+    *GET: parametros vão no corpo da url, buscando algo no servidor.
+    *POST: parametros vão no corpo da requisição.
+    *PUT
+    *DELETE
+    *OPTIOS
+    *TRACE
+    *HEAD
+    *CONNECT
+
+
+  Para montar uma página o fluxo de requisição é feito várias vezes, sendo assim
+  faz sentido que na programação de sites ou até mesmo servidores web é interessante
+  centralizar os arquivos de CSS, JS e até mesmo outras HTMLS em um só arquivo.
+  Pois o protocolo fará muitas requsções caso estejam muito distribuídos e referenciados
+  nas page.
+
+  Ou seja, pegar os arquivos componentes da aplicação e minificar-los,
+  comprimir-los e juntar tudo isso em um arquivo só.
+
+  Grupo de status:
+
+  1XX: informações
+  2XX: sucesso
+  3XX: redirecionamento 
+  4XX: erro no cliente
+  5XX: erro no servidor

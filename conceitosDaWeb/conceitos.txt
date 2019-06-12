@@ -1,0 +1,43 @@
+//A internet nada mais é que uma grande rede de computadores
+//Topologia centralizada 
+//Topologia distribuída
+
+//A base da internet o protocolo TCP/IP
+
+//TCP atua na camada de transporte (orientado a conexão)
+//UDP é mais leve, mas não é orientado a conexão
+
+//UDP -> streamer de dados (algo rápido) sem preocupação com a perda de dados.
+
+//IP -> protocolo responsável por fazer o roteamento com a rede.
+
+
+Classes IPv4:
+  * parte deste IP está destinado a identificar a rede a qual este computador está;
+  * parte está é utilzado a identificar o computador dentro de uma rede;
+
+  Classe A:
+    0.0.0.0 -> 255.0.0.0 
+
+    A primeira parte identifica a rede
+    As três últimas partes estão destinadas para definir a máquina ou host (computador dentro de uma rede)
+
+    Poucas redes e muitas máquinas.
+
+  Classe B:
+    0.0.0.0 -> 255.255.0.0
+
+    As duas primeiras partes identificam a rede.
+    As duas outras partes identificam o host e máquina.
+
+    Médio "caso".
+  
+  Classe C:
+    0.0.0.0 -> 255.255.0.0
+
+    As três primeiras partes identificam a rede.
+    A última parte identificam o host ou a máquina.
+
+Porta: é um processo que roda em uma máquina que se pretende comunicar com a rede
+
+  http:ip.generico.aqui.rs:portaGenerica => identifica o host e o processo associado a porta
