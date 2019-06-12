@@ -1,0 +1,18 @@
+Https => http seguro, junção do protocolo http mais outro protocolo que fornece mais segurança,
+essa segurança é feita em cima de um protocolo que criptografa
+os dados a partir de um certificado.
+  * Os dados são criptografados usando os protocolos TLS ou SSL
+  * Protege contra interceptação (MITM)
+  * Criptografa todas as informações: URL, cookies e headers
+  * Usa certificados digitais
+
+  -> Proteger contra interceptações. Somente se for descriptografados os dados.
+  -> Os certificados são responsáveis por descriptograr os dados criptografados na requisição.
+
+  **Existe diferença entre certificado e protocolo.
+
+Quando o desenvolvedor quiser/tiver que trabalhar com o protocolo https, é possível
+utlizar o Let's encrypt que é uma CA e a partir dela é possível gerar um certificado
+válido, gratuiro e simples, uma excelente opção para habilitar https dentro do servidor.
+
+Habilitar o Let's encrypt? Leia a documentação! :)
