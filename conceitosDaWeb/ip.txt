@@ -1,0 +1,19 @@
+IP => endereço utilizado para identificar os dispositivos na rede.
+      *Não tem como eu achar alguém se nao eu souber onde ele tá.
+
+      -> Cliente e Servidor possuem IP
+
+      IP do servidor deve ser fixo, pois os clientes precisam acha-lo
+      para poder utilizar o serviço pretendido quando acessado.
+
+      Como cliente, nos browser é acessado através do nome de dominío
+      do site e é feito a conexão com o servidor DNS para saber qual o
+      IP que é atendido para aquele dominío que foi requsitado.
+
+      Quando o IP de um servidor deixa de ser fixo, geralmente ocorre
+      problema de o cliente não conseguir acha-lo de imediato caso ou
+      nem acha-lo, pois o novo IP precisa ser replicado para todos os 
+      servidores DNS no mundo e isso demora um pouco.
+
+      IPv4 -> Humano :Decimal Máquina: Binário 4 octetos 
+      IPv6 -> Humano: Hexadecimal Máquina: Binário

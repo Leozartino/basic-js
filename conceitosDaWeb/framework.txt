@@ -1,0 +1,34 @@
+Framework => uma biblioteca robusta com um proposito de resolver problemas
+que ocorrem frequentemente na codificação. Bases pré-montadas de código.
+
+Canivete suiço, padrões, implementações que tem por objetivo a resolver
+determinado problema em uma arquitetura fléxivel e extensível.
+
+  *Prover recursos úteis que tem por objetivo a produtividade do desenvolvedor
+  para não se perder tempo implementado as coisas mais primitvas para um determiando
+  problema.
+
+  * Ganhos:
+  ->Economizar energia.
+  ->Produtividade.
+  ->Dedicar o foco em algo mais especifico para o problema.
+  ->Curva de aprendizado.
+
+  * Perdas:
+  ->As vezes é difícil refatorar um código feito com framework X, caso
+  ele não esteja atendendo a demanda ou seja feito uma migração de um sistema
+  que foi feito nele.
+  ->Segurança.
+  ->Matar uma formiga com uma bazuca, cuidado.
+  ->A equipe ou desenvolvedor deve saber qual framework certo para a aplicação,
+  caso seja feito uma escolha precipitada, a frase anterior será totalmente válida.
+
+
+
+  * Framework Open source:
+  -> Experiências de vários desenvolvedores, coletiva.
+  -> Resultado de vários trabalhos da comunidade que pode 
+  ser utilizado para a construção de uma aplicação.
+  -> Confiável do ponto de vista que funcionou pra muita gente,
+  ou como são várias pessoas as contribuidoras é bem provável
+  que resolvam problemas recorrentes.

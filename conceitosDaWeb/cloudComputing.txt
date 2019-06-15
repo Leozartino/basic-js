@@ -1,0 +1,9 @@
+Usar processos, serviços e relacionados de forma remota e sob demanda.
+Não deixando a infraestrutura subutilizada e escalavél.
+
+Paga pelo uso, como água, energia e internet, por exemplo.
+
+IaaS, infraestrutura como serviço na nuvem.
+
+É interessante que o desenvelvedor entenda sobre conceitos de infraestrutura, 
+coisas relacionados a rede etc.

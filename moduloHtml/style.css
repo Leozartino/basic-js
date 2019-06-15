@@ -1,0 +1,15 @@
+.red-background {
+  background-color: #e22d5d;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+#mainText {
+  font-size: 40px;
+  font-weight: bold;
+  color: royalblue;
+  background-color: black;
+  padding: 10px;
+}

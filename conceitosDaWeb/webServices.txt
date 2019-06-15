@@ -1,0 +1,28 @@
+Prover uma facilidade muita grande para que se tenha interoperabilidade entre 
+diversas linguagens diferentes.
+
+Web Service => um serviço web que a aplicação prover. Serviço de negócio, por 
+exemplo: obter a lista de devedores.
+
+  *Serviços que rodam em cima de tecnologias da web.
+  *Dados trafegados em formatos textuais (XML, JSON etc)
+
+Comunicação baseada em textos? Por que textual? Porque é muito mais fácil ter
+a interoperabilidade entre diversos sistemas diferentes.
+
+
+  *Tipos:
+    -SOAP -> WSDL, XML, RPC => Burocrático.
+    -REST -> JSON, HTTP => Simples.
+      --Convenções RESTful:
+        |--URL-------||--Método---||--Descrição------------|
+        |/clientes   ||POST       ||Novo cliente           |
+        |/clientes   ||GET        ||Ober Todos             |
+        |/clientes/36||GET        ||Obter cliente id 36    |
+        |/clientes/12||PUT PATCH  ||Atualizar cliente id 12|
+        |/cliente/12 ||DELETE     ||Deletar cliente id 12  |
+
+  *Tipos de arquiteura de sistemas:
+    -SOA -> orientado a serviço (barramento).
+    -Micro services -> serviços divididos e independentes, bastante especializados, prórpio ciclo de vida
+    linguagem de programação prórpia, seu banco de dados prórpio, seu time de desenvolvedores prórpio etc.
