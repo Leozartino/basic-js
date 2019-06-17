@@ -3,6 +3,18 @@ const $pastaNiveis = document
   .forEach(spanNiveis => {
     spanNiveis.onclick = evento => {
       const $ul = spanNiveis.nextElementSibling;
-      cosnole.log($ul);
+      console.log($ul);
     };
   });
+
+/*
+Código mais procedutal do que funcional. Tente utilizar callbacks,
+já que é bem mais comum e aconselhavel codar desta forma :)
+
+const teste = document.querySelectorAll(".pastaN1");
+for (let niveis of teste) {
+  niveis.onclick = event => {
+    console.log("A");
+  };
+}
+ */
