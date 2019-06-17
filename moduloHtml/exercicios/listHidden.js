@@ -1,7 +1,8 @@
-const $linksNiveis = document.querySelector("a .linkA");
-const $ulNiveis = document.querySelector("ul .ulA");
-
-$linksNiveis.onclick = () => {
-  const ulTemp = $ulNiveis;
-  $ulNiveis ? ($ulNiveis.innerHTML = "") : ($ulNiveis = ulTemp);
-};
+const $pastaNiveis = document
+  .querySelectorAll(".pastaN1")
+  .forEach(spanNiveis => {
+    spanNiveis.onclick = evento => {
+      const $ul = spanNiveis.nextElementSibling;
+      cosnole.log($ul);
+    };
+  });
