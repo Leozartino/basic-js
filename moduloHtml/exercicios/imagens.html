@@ -90,9 +90,34 @@
       callback();
     }
   }
-  const p = document.querySelector("[wm-slider] > p");
+  /*   const p = document.querySelector("[wm-slider] > p");
   p.style.display = "block";
   mover(p, 1500, -520, 5, () => {
     console.log("Terminou!!");
-  });
+  }); */
+
+  function slider() {
+    //querySelectorAll retorna um nodeList, que não é exatamente a mesma coisa
+    //que um array, o nodeList tem propriedades diferentes de um array.
+    const elementos = document.querySelectorAll("[wm-slider] > p");
+    const slides = Array.from(elementos); //transformando um nodeList em um array
+    exibirSlide(slides, slides[0]);
+  }
+  function exibirSlide(slides, posSlide) {
+    posSlide.style.display = "block";
+    const inicio = innerWidth; //largura interna da page atual (no momento)
+    const fim = -posSlide.clientWidth; // largura da área, da tag p.
+
+    posSlide.style.left = `${inicio}px`;
+    mover(posSlide, inicio, fim, 5, () => {
+      posSlide.style.display = "none";
+      exibirSlide(slides, getProximo(slides, posSlide));
+    });
+
+    function getProximo(lista, atual) {
+      const i = lista.indexOf(atual) + 1;
+      return i < lista.length ? lista[i] : lista[0];
+    }
+  }
+  slider();
 </script>
