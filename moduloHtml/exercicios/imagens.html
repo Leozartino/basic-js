@@ -1,0 +1,123 @@
+<!--
+  A tag p funcionará como uma div (gambiarra e só questões ditáticas)
+  O fato de as imagens estarem dentro de um parágrafo ira ajudar no 
+  momento que forem selecionadas as imagens para que d slider funcione.
+-->
+<div wm-slider>
+  <p>
+    <img
+      src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+      alt="imagem genérica"
+      width="513"
+      height="342"
+      title="Muro da Cidade por Tarso Besa"
+    />
+  </p>
+
+  <p>
+    <img
+      src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+      alt="Intro Cod3r"
+      height="342"
+    />
+  </p>
+
+  <p class="circular">
+    <img
+      src="http://files.cod3r.com.br/curso-web/imagem3.png"
+      alt="Rio de Janeiro"
+      height="342"
+    />
+  </p>
+
+  <p class="cidade"></p>
+
+  <p>
+    <picture>
+      <source
+        srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+        media="(min-width: 600px)"
+      />
+      <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" />
+    </picture>
+  </p>
+</div>
+
+<!-- <p class="texto">
+  <img
+    src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+    alt="Avatar"
+    height="50"
+    align="left"
+  />
+  Isso é um texto de demonstração. Apenas testando aqui. Não ligue muito, é só
+  um exemplo. Sample Text.
+</p>
+ -->
+
+<style>
+  p {
+    position: absolute;
+    display: none;
+  }
+  .circular {
+    width: 513px;
+    background-color: #444;
+  }
+  .texto {
+    width: 400px;
+  }
+  .texto img {
+    margin-right: 10px;
+  }
+  .cidade {
+    width: 513px;
+    height: 342;
+    background-image: url("http://files.cod3r.com.br/curso-web/imagem4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+</style>
+
+<script>
+  function mover(elem, inicio, fim, passo, callback) {
+    const novoInicio = inicio - passo;
+    if (novoInicio >= fim) {
+      elem.style.left = novoInicio + "px";
+      setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7);
+    } else {
+      callback();
+    }
+  }
+  /*   const p = document.querySelector("[wm-slider] > p");
+  p.style.display = "block";
+  mover(p, 1500, -520, 5, () => {
+    console.log("Terminou!!");
+  }); */
+
+  function slider() {
+    //querySelectorAll retorna um nodeList, que não é exatamente a mesma coisa
+    //que um array, o nodeList tem propriedades diferentes de um array.
+    const elementos = document.querySelectorAll("[wm-slider] > p");
+    const slides = Array.from(elementos); //transformando um nodeList em um array
+    exibirSlide(slides, slides[0]);
+  }
+  function exibirSlide(slides, posSlide) {
+    posSlide.style.display = "block";
+    const inicio = innerWidth; //largura interna da page atual (no momento)
+    const fim = -posSlide.clientWidth; // largura da área, da tag p.
+
+    posSlide.style.left = `${inicio}px`;
+    mover(posSlide, inicio, fim, 5, () => {
+      posSlide.style.display = "none";
+      exibirSlide(slides, getProximo(slides, posSlide));
+    });
+
+    function getProximo(lista, atual) {
+      const i = lista.indexOf(atual) + 1;
+      return i < lista.length ? lista[i] : lista[0];
+    }
+  }
+  slider();
+</script>
