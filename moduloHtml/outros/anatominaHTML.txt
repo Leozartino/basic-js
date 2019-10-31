@@ -1,0 +1,9 @@
+Utilizar as tags pensando no seu propósito, ter clareza na sua utilização
+e etendimento dos cenários para que aquela foi criado. Utilizando nos cenários
+esperados.
+
+Por isso é importante entender seu sentido, a semântica da tag.
+
+HTML cuida da estrutura
+CSS cuida do estilo
+JS cuida do comportamento
