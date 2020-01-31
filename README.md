@@ -1,6 +1,6 @@
-# Códigos de implementaçes básicas
-- Estruturado/Funcional
-- Estruturas condicionais
-- Estruturas de repetição
-- HTML5, CSS  & JS: manipulação da DOM, callback, features do ES5+ (filter, destructuring, class, etc).
-- Programação Orientada a Objetos (conceitos iniciais)
+# Basic implementation codes
+- Structured / Functional
+- Conditional structures
+- Repeating structures
+- HTML5, CSS and JS: DOM manipulation, callback, ES5 + resources (filter, destructuring, class, etc.).
+- Object Oriented Programming (initial concepts)
